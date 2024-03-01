@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(intervalId);
         clearTimeout(timeoutId);
         interval = Math.max(100, interval - 100); // Decrease the interval, minimum 100ms
+        moveCircle(); // Move the circle immediately after it's clicked
         startGame();
     });
-
-    startGame();
+    
 });
